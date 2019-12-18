@@ -13,11 +13,11 @@ function App() {
           <li><Link to="/about">About</Link></li>
         </ul>
         <Route exact path="/" component={Home} />
+        {/* creates a 'who' parameter in match obj */}
         <Route exact path="/about/:who" component={About} />
 
       </div>
     </Router>
-
   );
 }
 
